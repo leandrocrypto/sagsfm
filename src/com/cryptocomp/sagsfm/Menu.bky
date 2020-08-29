@@ -1,0 +1,172 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="dig9(4Je)/?dBAfmz{h6" x="-348" y="-566">
+    <mutation component_type="Button" is_generic="false" instance_name="Button1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button1</field>
+    <statement name="DO">
+      <block type="component_method" id="5VP2|Je2vc=a/6zj$fJT">
+        <mutation component_type="ThunkableAdMobInterstitial" method_name="LoadAd" is_generic="false" instance_name="AdMob_Interstitial1"></mutation>
+        <field name="COMPONENT_SELECTOR">AdMob_Interstitial1</field>
+        <next>
+          <block type="component_method" id="~!vwWGl7||3:3}u_ZO~:">
+            <mutation component_type="Sharing" method_name="ShareMessage" is_generic="false" instance_name="Sharing1"></mutation>
+            <field name="COMPONENT_SELECTOR">Sharing1</field>
+            <value name="ARG0">
+              <block type="text" id="`j[K.Q!VMc5~4Yp$3`a`">
+                <field name="TEXT">http://l.radios.com.br/r/113539</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="M1`:*SPP8h@RkH78dNPd" x="-524" y="-384">
+    <mutation component_type="ThunkableAdMobBanner" is_generic="false" instance_name="AdMob_Banner1" event_name="AdLoaded"></mutation>
+    <field name="COMPONENT_SELECTOR">AdMob_Banner1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="vSwlBe32PhK+DOE5kwwe">
+        <mutation component_type="ThunkableAdMobBanner" set_or_get="set" property_name="Visible" is_generic="false" instance_name="AdMob_Banner1"></mutation>
+        <field name="COMPONENT_SELECTOR">AdMob_Banner1</field>
+        <field name="PROP">Visible</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id=".KvJgz@ys6$PH731:-+*">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="^p7A^Xz#`%#elQ0_@;?M" x="-519" y="-224">
+    <mutation component_type="Button" is_generic="false" instance_name="BTN_Twitter" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">BTN_Twitter</field>
+    <statement name="DO">
+      <block type="component_set_get" id="I0P9OzGF|yqG1XE0|~2-">
+        <mutation component_type="ActivityStarter" set_or_get="set" property_name="DataUri" is_generic="false" instance_name="Activity_Starter1"></mutation>
+        <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+        <field name="PROP">DataUri</field>
+        <value name="VALUE">
+          <block type="text" id="iFFB7y]#n4G5.9jOJ8h#">
+            <field name="TEXT">https://www.twitter.com/SagsFm</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="3R?iNa,8z?{Qu|jkk8g0">
+            <mutation component_type="ActivityStarter" method_name="StartActivity" is_generic="false" instance_name="Activity_Starter1"></mutation>
+            <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="=$oxSUh2!5$y[MiT8+{h" x="85" y="-201">
+    <mutation component_type="Button" is_generic="false" instance_name="BTN_Web" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">BTN_Web</field>
+    <statement name="DO">
+      <block type="component_set_get" id="_m72(nlP~f3RDi4Jg6{;">
+        <mutation component_type="ActivityStarter" set_or_get="set" property_name="DataUri" is_generic="false" instance_name="Activity_Starter1"></mutation>
+        <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+        <field name="PROP">DataUri</field>
+        <value name="VALUE">
+          <block type="text" id="$1m[58#W3;|D|V2d_+vL">
+            <field name="TEXT">http://radiosagsfm.com.br/</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="`UJc7HLCn;tKwJ3aU}.]">
+            <mutation component_type="ActivityStarter" method_name="StartActivity" is_generic="false" instance_name="Activity_Starter1"></mutation>
+            <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id=":Ok`Q1SC+4g6LX#%bN@)" x="-524" y="-115">
+    <mutation component_type="Button" is_generic="false" instance_name="BTN_Facebook" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">BTN_Facebook</field>
+    <statement name="DO">
+      <block type="component_set_get" id="6n3Oi(O8ti$wyVq-$yx[">
+        <mutation component_type="ActivityStarter" set_or_get="set" property_name="DataUri" is_generic="false" instance_name="Activity_Starter1"></mutation>
+        <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+        <field name="PROP">DataUri</field>
+        <value name="VALUE">
+          <block type="text" id="6^1/x(der#+Q,;I-+.8G">
+            <field name="TEXT">https://facebook.com/Sagsfm2019</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="s~4a5$iujtJJLd;}(om%">
+            <mutation component_type="ActivityStarter" method_name="StartActivity" is_generic="false" instance_name="Activity_Starter1"></mutation>
+            <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="W3D/S+qH|u7{~B[#4X*a" x="202" y="-94">
+    <mutation component_type="Button" is_generic="false" instance_name="BTN_Youtube" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">BTN_Youtube</field>
+    <statement name="DO">
+      <block type="component_set_get" id=":x(fZ=~BCYLuDVU^#.5p">
+        <mutation component_type="ActivityStarter" set_or_get="set" property_name="DataUri" is_generic="false" instance_name="Activity_Starter1"></mutation>
+        <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+        <field name="PROP">DataUri</field>
+        <value name="VALUE">
+          <block type="text" id="xvMb!+^AFc5J,p$JTUle">
+            <field name="TEXT">https://www.youtube.com/channel/UCbfzNosXZ4Ua0vey9JzfDMw?view_as=subscriber</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="nWyq;K|Z$%8DQQ^F-Z~d">
+            <mutation component_type="ActivityStarter" method_name="StartActivity" is_generic="false" instance_name="Activity_Starter1"></mutation>
+            <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="=G;:Lg+Kvv((SBb5cYkP" x="-526" y="-8">
+    <mutation component_type="Button" is_generic="false" instance_name="BTN_Instagram" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">BTN_Instagram</field>
+    <statement name="DO">
+      <block type="component_set_get" id="s-d5aHop?qM1[mrnC`Al">
+        <mutation component_type="ActivityStarter" set_or_get="set" property_name="DataUri" is_generic="false" instance_name="Activity_Starter1"></mutation>
+        <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+        <field name="PROP">DataUri</field>
+        <value name="VALUE">
+          <block type="text" id="70#t1LD9:s4zXxKaZxB4">
+            <field name="TEXT">https://instagram.com/radiosagsmf2020</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="G^S/}Jmx3~%V*BR57Ic9">
+            <mutation component_type="ActivityStarter" method_name="StartActivity" is_generic="false" instance_name="Activity_Starter1"></mutation>
+            <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="NxU/MI7aTop3fFES]=T`" x="208" y="17">
+    <mutation component_type="Button" is_generic="false" instance_name="BTN_Telegram" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">BTN_Telegram</field>
+    <statement name="DO">
+      <block type="component_set_get" id="!-H$FGT+vJB87E2nmI0x">
+        <mutation component_type="ActivityStarter" set_or_get="set" property_name="DataUri" is_generic="false" instance_name="Activity_Starter1"></mutation>
+        <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+        <field name="PROP">DataUri</field>
+        <value name="VALUE">
+          <block type="text" id="LK]EA8Pl65X4Z?E@akFW">
+            <field name="TEXT">https://api.whatsapp.com/send?phone=5579981159421&amp;text=M%C3%BAsica!!!</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="S*L*[Mj^gZOceE[FA{55">
+            <mutation component_type="ActivityStarter" method_name="StartActivity" is_generic="false" instance_name="Activity_Starter1"></mutation>
+            <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="176" language-version="26"></yacodeblocks>
+</xml>

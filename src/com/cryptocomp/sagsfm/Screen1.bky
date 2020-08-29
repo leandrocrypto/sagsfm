@@ -1,0 +1,73 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="it,g7l(Buga_=;9~V4?_" x="-66" y="105">
+    <mutation component_type="Clock" is_generic="false" instance_name="Clock1" event_name="Timer"></mutation>
+    <field name="COMPONENT_SELECTOR">Clock1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="Zu/blOu6x`5hPbIzC$RL">
+        <mutation component_type="Image" set_or_get="set" property_name="RotationAngle" is_generic="false" instance_name="Cash"></mutation>
+        <field name="COMPONENT_SELECTOR">Cash</field>
+        <field name="PROP">RotationAngle</field>
+        <value name="VALUE">
+          <block type="math_add" id="_gDIPxc8OtxU6KwGuT8%">
+            <mutation items="2"></mutation>
+            <value name="NUM0">
+              <block type="component_set_get" id="spz%;@GuqJGW_^Qo[5#O">
+                <mutation component_type="Image" set_or_get="get" property_name="RotationAngle" is_generic="false" instance_name="Cash"></mutation>
+                <field name="COMPONENT_SELECTOR">Cash</field>
+                <field name="PROP">RotationAngle</field>
+              </block>
+            </value>
+            <value name="NUM1">
+              <block type="math_number" id=";U2v_e~P9tC`_a*7holc">
+                <field name="NUM">20</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="2!Qk)ie+k8`Fw.sg~Vrq">
+            <value name="IF0">
+              <block type="math_compare" id="x:aO$|e:Xya`o!7Nn0oA">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_set_get" id=".UlV`.)|A3:fC?rIBw{K">
+                    <mutation component_type="Image" set_or_get="get" property_name="RotationAngle" is_generic="false" instance_name="Cash"></mutation>
+                    <field name="COMPONENT_SELECTOR">Cash</field>
+                    <field name="PROP">RotationAngle</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="XaJx5+eEGwm@(M/u@9=E">
+                    <field name="NUM">1080</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_set_get" id="sK~+vanAQ(*bFhfo,wdY">
+                <mutation component_type="Clock" set_or_get="set" property_name="TimerEnabled" is_generic="false" instance_name="Clock1"></mutation>
+                <field name="COMPONENT_SELECTOR">Clock1</field>
+                <field name="PROP">TimerEnabled</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="g76SqzuaIt1{G}VEq2r,">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_openAnotherScreen" id="AxnbK.ovIIvJ(uJ1qKXY">
+                    <value name="SCREEN">
+                      <block type="text" id="y[^*Km^E.dP}Vodtt53m">
+                        <field name="TEXT">Menu</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="176" language-version="26"></yacodeblocks>
+</xml>
